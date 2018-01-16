@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+
+1.버튼을 클릭하면 테스트 문장의 폰트크기와 색깔이 변경됩니다.
+
+<p id = "demo">테스트 문장</p>
+<script>
+function myFunction(){
+	document.getElementById('demo').style='color:#ff6688; font-size:30px;';}
+</script>
+<button onclick="myFunction()">Click Me!</button><br/><br/>
+
+
+
+2.테스트 문장을 클릭하면 화면에서 사라집니다.(Jquery)
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('div').click(function(){
+		$(this).hide();		
+	});
+});
+</script>
+<div>테스트문장</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+h1 {
+	font-size: 50px;
+	color: #FA1DFF;
+}
+
+.ex1 {
+	color: blue;
+}
+#ex2{
+color:orange;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function shift_right() {
+		let str = document.myform.ta1.value;
+		if (str != '') {
+			document.myform.ta2.value = str;
+			document.myform.ta1.value = '';
+		}
+	}
+	function shift_left() {
+		let str = document.myform.ta2.value;
+		if (str != '') {
+			document.myform.ta1.value = str;
+			document.myform.ta2.value = '';
+		}
+	}
+</script>
+</head>
+<body>
+	<form name="myform">
+		<table>
+			<tr>
+				<td><textarea name="ta1" rows="40" cols="30">
+2017.06.15.(목)
+17:32:00 기준
+1 외인사
+2 김현미
+3 하루
+
+</textarea><br /> 
+
+
+<!-- <ahref="http://sports.news.naver.com/kfootball/news/read.nhn?oid=001&aid=0009339590">[충격] 축구협회, 슈틸리케 감독 결국....</a></td> -->
+				<td><input type = "button" onclick="shift_right()" value="→"/><br />
+				<input type = "button" onclick="shift_left()" value="←"/>
+				<td>
+				<td><textarea name="ta2" rows="40" cols="30"></textarea></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

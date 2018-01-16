@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function shift_right() {
+		let str = document.getElementById('ta1').value;
+		// 	console.log(str);
+		if (str != '') {
+			document.getElementById('ta2').value = str;
+			document.getElementById('ta1').value = '';
+		}
+	}
+	function shift_left() {
+		let str = document.getElementById('ta2').value;
+		// 	console.log(str);
+		if (str != '') {
+			document.getElementById('ta1').value = str;
+			document.getElementById('ta2').value = '';
+		}
+	}
+</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td><textarea id="ta1" rows="40" cols="30">
+2017.06.15.(목)
+17:32:00 기준
+1 외인사
+2 김현미
+3 하루
+4 방용훈
+5 백남기
+6 백선하
+7 슈틸리케
+8 군함도
+9 조정식
+10 노무현입니다 관객수
+11 군주
+12 도고아르젠티노
+13 수상한 파트너
+14 영화
+15 신수지
+16 신민아
+17 롤챔스
+18 양산 아파트 밧줄
+19 지드래곤 usb
+20 라디오스타
+
+</textarea><br/>
+<a href= "http://sports.news.naver.com/kfootball/news/read.nhn?oid=001&aid=0009339590">[충격] 축구협회, 슈틸리케 감독 결국....</a></td>
+			<td><input type = "button" onclick="shift_right()" value="→"/><br />
+				<input type = "button" onclick="shift_left()" value="←"/>
+				<br /></td>
+			<td>
+			<td><textarea id="ta2" rows="40" cols="30"></textarea></td>
+		</tr>
+	</table>
+</body>
+</html>
